@@ -1,4 +1,4 @@
-# once_javiera
+# once javiera
 repositorio de jony
 ## tutorial
 1. primero se entra github
