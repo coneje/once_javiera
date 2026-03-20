@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LOL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 700px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px 14px;
+      text-align: center;
+    }
+
+    /* Encabezado principal del torneo */
+    .encabezado-torneo {
+      background-color: #869205cf;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Información del torneo */
+    .info-torneo {
+      background-color: #e8f0fe;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    /* Encabezados de partidas */
+    thead tr:last-child th {
+      background-color: #869205cf;
+      color: white;
+    }
+
+    /* Primera fila del thead (equipos + partidas) */
+    thead tr:first-child th {
+      background-color: #869205cf;
+      color: white;
+    }
+
+    /* Filas del cuerpo — alternadas */
+    tbody tr:nth-child(even) {
+      background-color: #f0f7ff;
+    }
+
+    tbody tr:hover {
+      background-color: #d0e8ff;
+    }
+
+    /* Columna de equipos */
+    tbody td:first-child {
+      text-align: left;
+      font-weight: bold;
+    }
+
+    /* Partidas ganadas */
+    .aprobada {
+      color: #1a7a1a;
+      font-weight: bold;
+    }
+
+    /* Partida perdida */
+    .reprobada {
+      color: #cc0000;
+      font-weight: bold;
+    }
+
+    /* Pie de tabla */
+    tfoot td {
+      background-color: #869205cf;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+
+    <!-- ===================== THEAD ===================== -->
+    <thead>
+
+      <!-- Fila 1: Datos del torneo -->
+      <tr>
+        <th class="encabezado-colegio" colspan="6">
+          Torneo de lol
+        </th>
+      </tr>
+
+      <!-- Fila 2: Datos del torneo, quien gano o perdio. -->
+      <tr>
+        <td class="info-estudiante" colspan="1">
+          <strong>Juego: valorant</strong>
+        </td>
+        <td class="info-estudiante" colspan="2">
+          <strong>Equipos de torneo nacional</strong>
+        </td>
+        <td class="info-estudiante" colspan="3" > 
+          <strong>Año:</strong> 2020
+        </td>
+      </tr>
+
+      <!-- Fila 3: Encabezados de columnas -->
+      <tr>
+        <th>Equipos</th>
+        <th>Torneo 1</th>
+        <th>Torneo 2</th>
+        <th>Torneo 3</th>
+        <th>Torneo 4</th>
+        <th>Torneo 5</th>
+      </tr>
+
+    </thead>
+
+    <!-- ===================== TBODY ===================== -->
+    <tbody>
+
+      <tr>
+        <td>TCG</td>
+        <td class="aprobada">1</td>
+        <td class="reprobada">0</td>
+        <td class="reprobada">0</td>
+        <td class="aprobada">1</td>
+        <td class="aprobada">1</td>
+      </tr>
+
+      <tr>
+        <td>LOL</td>
+        <td class="aprobada">1</td>
+        <td class="reprobada">0</td>
+        <td class="aprobada">1</td>
+        <td class="reprobada">0</td>
+        <td class="reprobada">0</td>
+      </tr>
+
+      <tr>
+        <td>VCT</td>
+        <td class="reprobada">0</td>
+        <td class="aprobada">1</td>
+        <td class="reprobada">0</td>
+        <td class="reprobada">0</td>
+        <td class="reprobada">0</td>
+      </tr>
+
+      <tr>
+        <td>LDF</td>
+        <td class="reprobada">0</td>
+        <td class="reprobada">0</td>
+        <td class="aprobada">1</td>
+        <td class="reprobada">0</td>
+        <td class="aprobada">1</td>
+      </tr>
+
+      <tr>
+        <td>NCF</td>
+        <td class="aprobada">1</td>
+        <td class="aprobada">1</td>
+        <td class="aprobada">1</td>
+        <td class="aprobada">1</td>
+        <td class="aprobada">1</td>
+      </tr>
+
+      <tr>
+        <td>DLJ</td>
+        <td class="reprobada">0</td>
+        <td class="aprobada">1</td>
+        <td class="reprobada">0</td>
+        <td class="aprobada">1</td>
+        <td class="reprobada">0</td>
+      </tr>
+
+    </tbody>
+
+    <!-- ===================== TFOOT ===================== -->
+    <tfoot>
+      <tr>
+        <td colspan="5">📊 Ganador Del Torneo</td>
+        <td>NFC</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+</html>
